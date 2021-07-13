@@ -13,3 +13,7 @@ Faça uma api na sua liguagem preferida que faça a gerência de usuários. Voc�
 ### Pontos extras:
     - Não é possível cadastrar usuários com o mesmo nome de usuário ou email.
     - A rota de deletar não apaga um registro no banco de dados, mas só marca o usuário como deletado(soft delete).
+
+
+## Nota:
+    * Branch 'JS' serve para apresentar a resolução usando a linguagem Javascript.
