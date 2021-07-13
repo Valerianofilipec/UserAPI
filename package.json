@@ -1,0 +1,9 @@
+{
+  "name": "UserAPI",
+  "version": "1.0.0",
+  "description": "User Managment API ",
+  "main": "index.js",
+  "author": "Valeriano Filipe",
+  "license": "MIT",
+  "private": true
+}
