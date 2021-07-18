@@ -13,7 +13,7 @@ router.get("/teste", (request, response) => response.json({
 router.put('/user/sign-up', ()=> console.log("signing up a new user"))
 
 //[ ] Uma rota para ver um perfil do usuário (essa rota só mostra nome, email e nome de usuário).
-router.get('/user/:id', () => console.log(`user ${id} `)))
+router.get('/user/:id', (id) => console.log(`user ${id} `))
 
 //[ ] Uma rota para editar um usuário.
 router.post('/user/:id', ()=> console.log('edit user '))
