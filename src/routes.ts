@@ -1,5 +1,5 @@
 import { Router } from "express";
-
+import { UserController } from "./controller/UserController";
 const router = Router()
 
 router.get("/teste", (request, response) => response.json({
@@ -10,10 +10,10 @@ router.get("/teste", (request, response) => response.json({
 }))
 
 //[ ] Uma rota que cadastra um usuário (cada usuário tem nome, email, senha e nome de usuário. As senhas precisam ter pelo menos 6 caracteres). Não é possível cadastrar usuários com o mesmo nome de usuário ou email.
-router.put('/user/sign-up', ()=> console.log("signing up a new user"))
+router.put('/user/sign-up', UserController.store);
 
 //[ ] Uma rota para ver um perfil do usuário (essa rota só mostra nome, email e nome de usuário).
-router.get('/user/:id', (id) => console.log(`user ${id} `))
+//router.get('/user/:email', UserController.show());
 
 //[ ] Uma rota para editar um usuário.
 router.post('/user/:id', ()=> console.log('edit user '))

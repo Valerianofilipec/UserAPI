@@ -1,8 +1,9 @@
 import express from 'express'
 import cors from 'cors'
-
 import {router} from './routes'
+import { connectdb } from './database/connectDB'
 
+connectdb(); // conexão à base de dados
 
 const app = express()
 app.use(cors())
